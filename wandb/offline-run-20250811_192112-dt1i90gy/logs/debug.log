@@ -1,0 +1,28 @@
+2025-08-11 19:21:12,097 INFO    MainThread:10012 [wandb_setup.py:_flush():76] Current SDK version is 0.16.2
+2025-08-11 19:21:12,097 INFO    MainThread:10012 [wandb_setup.py:_flush():76] Configure stats pid to 10012
+2025-08-11 19:21:12,097 INFO    MainThread:10012 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2025-08-11 19:21:12,097 INFO    MainThread:10012 [wandb_setup.py:_flush():76] Loading settings from /content/MEDIAR/wandb/settings
+2025-08-11 19:21:12,097 INFO    MainThread:10012 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2025-08-11 19:21:12,097 INFO    MainThread:10012 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2025-08-11 19:21:12,097 INFO    MainThread:10012 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program_abspath': '/content/MEDIAR/main.py', 'program': '/content/MEDIAR/./main.py'}
+2025-08-11 19:21:12,097 INFO    MainThread:10012 [wandb_init.py:_log_setup():526] Logging user logs to /content/MEDIAR/wandb/offline-run-20250811_192112-dt1i90gy/logs/debug.log
+2025-08-11 19:21:12,097 INFO    MainThread:10012 [wandb_init.py:_log_setup():527] Logging internal logs to /content/MEDIAR/wandb/offline-run-20250811_192112-dt1i90gy/logs/debug-internal.log
+2025-08-11 19:21:12,097 INFO    MainThread:10012 [wandb_init.py:init():566] calling init triggers
+2025-08-11 19:21:12,097 INFO    MainThread:10012 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'data_setups': {'labeled': {'root': '/content/MEDIAR/', 'mapping_file': './train_tools/data_utils/mapping_labeled.json', 'mapping_file_tuning': '/content/MEDIAR/train_tools/data_utils/mapping_tuning.json', 'amplified': False, 'batch_size': 1, 'valid_portion': 0.0}, 'public': {'enabled': False, 'params': {'root': '/content/MEDIAR/', 'mapping_file': './train_tools/data_utils/mapping_public.json', 'batch_size': 1}}, 'unlabeled': {'enabled': False}}, 'train_setups': {'model': {'name': 'mediar-former', 'params': {}, 'pretrained': {'enabled': True, 'weights': './weights/pretrained/phase1.pth', 'strict': False}}, 'trainer': {'name': 'mediar', 'params': {'num_epochs': 100, 'valid_frequency': 1, 'device': 'cuda:0', 'amp': True, 'algo_params': {'with_public': False}}}, 'optimizer': {'name': 'adamw', 'params': {'lr': 2e-05}}, 'scheduler': {'enabled': True, 'name': 'cosine', 'params': {'T_max': 100, 'eta_min': 1e-07}}, 'seed': 19940817}, 'pred_setups': {'input_path': '/content/MEDIAR/data/Official/Tuning/images', 'output_path': './results/', 'make_submission': True, 'exp_name': 'mediar_from_phase1', 'algo_params': {'use_tta': False}}, 'wandb_setups': {'project': 'CellSeg', 'group': 'Fine-tuning', 'name': 'from_phase1'}}
+2025-08-11 19:21:12,097 INFO    MainThread:10012 [wandb_init.py:init():616] starting backend
+2025-08-11 19:21:12,097 INFO    MainThread:10012 [wandb_init.py:init():620] setting up manager
+2025-08-11 19:21:12,098 INFO    MainThread:10012 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-08-11 19:21:12,099 INFO    MainThread:10012 [wandb_init.py:init():628] backend started and connected
+2025-08-11 19:21:12,104 INFO    MainThread:10012 [wandb_init.py:init():720] updated telemetry
+2025-08-11 19:21:12,108 INFO    MainThread:10012 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2025-08-11 19:21:12,112 INFO    MainThread:10012 [wandb_init.py:init():804] starting run threads in backend
+2025-08-11 19:21:12,187 INFO    MainThread:10012 [wandb_run.py:_console_start():2233] atexit reg
+2025-08-11 19:21:12,187 INFO    MainThread:10012 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2025-08-11 19:21:12,187 INFO    MainThread:10012 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2025-08-11 19:21:12,187 INFO    MainThread:10012 [wandb_run.py:_redirect():2178] Redirects installed.
+2025-08-11 19:21:12,188 INFO    MainThread:10012 [wandb_init.py:init():847] run started, returning control to user process
+2025-08-11 19:21:12,188 INFO    MainThread:10012 [wandb_config.py:__setitem__():151] config set log_interval = 10 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7cda968da590>>
+2025-08-11 19:21:12,188 INFO    MainThread:10012 [wandb_run.py:_config_callback():1342] config_cb log_interval 10 None
+2025-08-11 19:21:17,991 INFO    MainThread:10012 [wandb_watch.py:watch():51] Watching
+2025-08-11 19:23:40,396 WARNING MsgRouterThr:10012 [router.py:message_loop():77] message_loop has been closed

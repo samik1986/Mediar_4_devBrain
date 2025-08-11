@@ -1,0 +1,60 @@
+{
+    "os": "Linux-6.1.123+-x86_64-with-glibc2.35",
+    "python": "3.11.13",
+    "heartbeatAt": "2025-08-11T19:19:18.843015",
+    "startedAt": "2025-08-11T19:19:18.758720",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--config_path=/content/MEDIAR/config/step2_finetuning/finetuning1.json"
+    ],
+    "state": "running",
+    "program": "/content/MEDIAR/./main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/Lee-Gihun/MEDIAR.git",
+        "commit": "c34aa0d1626567e678b62a0acb4464624328e291"
+    },
+    "email": null,
+    "root": "/content/MEDIAR",
+    "host": "4714b79f005d",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 1,
+    "cpu_count_logical": 2,
+    "cpu_freq": {
+        "current": 2199.998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 112.6365966796875,
+            "used": 48.193233489990234
+        }
+    },
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla T4",
+            "memory_total": 16106127360
+        }
+    ],
+    "memory": {
+        "total": 12.673782348632812
+    }
+}
