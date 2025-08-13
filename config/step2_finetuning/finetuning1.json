@@ -52,7 +52,7 @@
         "seed": 19940817
     },
     "pred_setups":{
-        "input_path":"/content/Mediar_4_devBrain/data/Official/Tuning/images",
+        "input_path":"/content/drive/MyDrive/Root/Official/Tuning/images",
         "output_path": "./results/",
         "make_submission": true,
         "exp_name": "mediar_from_phase1",
